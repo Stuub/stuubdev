@@ -4,7 +4,7 @@ Welcome to my cybersecurity blog repository! 🚀
 
 ## Overview
 
-This repository hosts the code for my personal cybersecurity blog hosted on [stuub.dev](stuub.dev). Serving as a showcase for my cybersecurity projects, providing previews, and acting as a digital resume.
+This repository hosts the code for my personal cybersecurity blog hosted on [stuub.dev](https://www.stuub.dev). Serving as a showcase for my cybersecurity projects, providing previews, and acting as a digital resume.
 
 ## Features
 
