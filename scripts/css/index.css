@@ -36,6 +36,7 @@ html {
     animation-timing-function: linear;
     background-blend-mode: difference;
     background-color: white;
+    position: relative;
 }
 .dark-mode .footer {
     background-color: #11111a !important;    
@@ -133,7 +134,7 @@ body {
     top: 0;
     left: 2%;
     right: 0;
-    height: 25%;
+    height: 100%;
     margin: auto;
 }
 
@@ -167,12 +168,13 @@ body {
     left: 51%;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
+    bottom: 0;
 }
 
 .line::after {
     content: "";
     display: block;
-    position: absolute;
+    position: relative;
     height: 15vh;
     width: 100%;
     top: -50%;
