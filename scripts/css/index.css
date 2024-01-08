@@ -36,7 +36,6 @@ html {
     animation-timing-function: linear;
     background-blend-mode: difference;
     background-color: white;
-    position: relative;
 }
 .dark-mode .footer {
     background-color: #11111a !important;    
@@ -101,6 +100,7 @@ html {
     animation: bg-scrolling-reverse 0.92s infinite;
     animation-timing-function: linear;
     background-blend-mode: normal;
+    position: relative;
 }
 
 .lead {
@@ -132,7 +132,7 @@ body {
 .lines {
     position: absolute;
     top: 0;
-    left: 2%;
+    left: 0%;
     right: 0;
     height: 100%;
     margin: auto;
@@ -165,7 +165,7 @@ body {
     width: 1px;
     height: 100%;
     top: 0%;
-    left: 51%;
+    left: 50%;
     background: rgba(255, 255, 255, 0.1);
     overflow: hidden;
     bottom: 0;
