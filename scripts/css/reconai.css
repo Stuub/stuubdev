@@ -37,15 +37,7 @@ html {
     padding-top: 4%;
 }
 
-@keyframes rainbow {
-    0% {color: red;}
-    28% {color: rgb(255, 255, 255);}
-    42% {color: rgb(81, 0, 255);}
-    100% {color: red;}
-}
-
 .nav .nav-link {
-    animation-name: rainbow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -54,7 +46,7 @@ html {
 .scroll-nav {
     background: #000000;
     transition: all 0.23s ease-in-out;
-    box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 1.5rem 0 rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode h2, p {
@@ -87,6 +79,54 @@ h2, p {
 
 p1 {
     color: #fff;
+}
+
+.small-link {
+    font-size: 0.8rem;
+    margin-left: 1rem; 
+}
+
+.scroll-nav a {
+    color: #fff !important;
+}
+
+.scroll-nav a:hover {
+    color: #ca2121 !important;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav-link {
+        font-size: 0.7rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .nav-link {
+        font-size: 0.85rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-link {
+        font-size: 1.0rem;
+    }
 }
 
 /*  */
