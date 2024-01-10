@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Pointer colour shift
 const CONTAINER = document.querySelector('.container')
-const CARDS = document.querySelectorAll('.col-sm-4')
+const CARDS = document.querySelectorAll('.col-sm-4, .ml-auto')
 
 const CONFIG = {
 	proximity: 40,

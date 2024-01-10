@@ -22,7 +22,7 @@ html {
 
 .dark-mode .navbar {
     background: #191924 !important;
-    box-shadow:  0 0.1rem 0 rgba(255, 255, 255, 0.18) !important;
+    box-shadow:  0px 0.5px 0px rgb(138, 138, 138) !important;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .dark-mode .card {
@@ -93,6 +93,13 @@ html {
 
 .btn-secondary {
     font-family: Arial, Helvetica, sans-serif !important;
+    background-color: #313242 !important;
+    border-color: #343a40 !important;
+}
+
+.dark-mode .btn-secondary {
+    /* background-color: #313242 !important;
+    border-color: #343a40 !important; */
 }
 
 .jumbotron {
@@ -345,7 +352,7 @@ body {
     overflow: hidden;
 }
 
-.col-sm-4:is(:hover, :focus-visible) {
+.col-sm-4:is(:hover, :focus-visible){
     z-index: 2;
 }
 
@@ -377,6 +384,26 @@ body {
     mask-clip: padding-box, border-box;
     opacity: var(--active);
     transition: opacity 1s;
+}
+
+/* .ml-auto {
+    --active: 0.15;
+    --start: 0;
+    height: 100%;
+    background: var(--card);
+    padding: 1.4rem;
+    border-radius: var(--border-radius);
+    min-width: 280px;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    position: relative;
+    overflow: hidden;
+} */
+
+.ml-auto:is(:hover, :focus-visible) {
+    z-index: 2;
 }
 
 .col-sm-4::before {
@@ -439,75 +466,71 @@ body {
     mask-composite: intersect;
 }
 
-.badge {
-    border: 2px solid var(--border);
-    align-self: start;
-    border-radius: 100px;
-    padding: 0.5rem 0.7rem;
-    font-size: 0.675rem;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-weight: 50;
-}
+/* .ml-auto::before {
+    position: absolute;
+    inset: 0;
+    border: var(--border-width) solid transparent;
+    content: "";
+    border-radius: var(--border-radius);
+    pointer-events: none;
+    background: var(--border);
+    background-attachment: fixed;
+    border-radius: var(--border-radius);
+    mask: linear-gradient(#0000, #0000),
+        conic-gradient(
+            from
+                calc(
+                    (
+                            (var(--start) + (var(--spread) * 0.25)) -
+                                (var(--spread) * 1.5)
+                        ) * 1deg
+                ),
+            hsl(0 0% 100% / 0.15) 0deg,
+            white,
+            hsl(0 0% 100% / 0.15) calc(var(--spread) * 2.5deg)
+        );
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+    opacity: var(--active);
+    transition: opacity 1s;
+} */
 
-a {
-    color: var(--color);
-    text-decoration: none;
-    opacity: 0.5;
-    display: inline-block;
-    align-self: start;
-    transition: opacity 0.2s;
-}
-
-a:is(:hover, :focus-visible) {
-    opacity: 1;
-}
+/* .ml-auto::after{
+    --bg-size: 100%;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    background: var(--gradient);
+    background-attachment: fixed;
+    border-radius: var(--border-radius);
+    opacity: var(--active, 0);
+    transition: opacity 1s;
+    --alpha: 0;
+    inset: 0;
+    border: var(--border-width) solid transparent;
+    mask: linear-gradient(#0000, #0000),
+        conic-gradient(
+            from
+                calc(
+                    (
+                            (var(--start) + (var(--spread) * 0.25)) -
+                                (var(--spread) * 0.5)
+                        ) * 1deg
+                ),
+            #0000 0deg,
+            #fff,
+            #0000 calc(var(--spread) * 0.5deg)
+        );
+    filter: brightness(1.5);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+} */
 
 .col-sm-4 h2 {
     margin: 0;
     padding: 1rem 0;
     font-weight: 100;
     font-size: 1.5rem;
-}
-
-.header {
-    position: relative;
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.header svg {
-    --count: 4;
-    width: 106px;
-}
-
-.header svg:nth-of-type(2),
-.header svg:nth-of-type(3),
-.header svg:nth-of-type(4) {
-    position: absolute;
-    z-index: calc(var(--count) - var(--index));
-    translate: calc(var(--index) * 30%) 0;
-    opacity: calc(var(--count) / (2 * (var(--index) * 10)));
-}
-
-.header svg:nth-of-type(2) {
-    --index: 1;
-}
-.header svg:nth-of-type(3) {
-    --index: 2;
-}
-.header svg:nth-of-type(4) {
-    --index: 3;
-}
-
-.badge svg {
-    width: 16px;
-}
-
-.dg.ac {
-    z-index: 99999 !important;
 }
 
 .row {

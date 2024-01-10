@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ReconnAI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="scripts/css/reconai.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    </head>
+    <body class="">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">stuub.dev</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown" style="background-color: #949ea8;">
+                            <a class="dropdown-item" href="#">ReconnAI</a>
+                            <a class="dropdown-item" href="#">Northumbria Certificate Helper</a>
+                            <a class="dropdown-item" href="#">Project 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            <div class="ml-auto">
+                <button class="btn btn-secondary my-2 my-sm-0 mt-auto" id="darkModeToggle">Dark Mode</button>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">ReconnAI</h1>
+                <p class="lead">ReconnAI is a python framework that integrates AI with the Reconnaissance phase of Penetration Testing. <br>It was developed for my University Dissertation entitled: <br><br>'Integrating Artificial Intelligence and CyberSecurity: <br> A Comprehensive Exploration of Automated Vulnerability Analysis and Penetration Testing.'</p>
+                <img src="img/reconai.png" style="min-height: min-content; max-height: 50rem;">
+            </div>
+        </div>
+
+        <div class="spacer">
+</div>
+        <div class="d-flex flex-row">
+            <!-- Sidebar -->
+            <nav class="scrolling navbar-light position-sticky scroll-nav" style="top: 0;">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">Welcome to ReconnAI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">AI Integration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">Development</a>
+                    </li>
+                </ul>
+            </nav>
+
+        <div class="container-fluid" id="myScrollspy">
+            <section id="section1" style="margin-bottom: 2rem;">
+                <div class="row">
+                    <div class="col-12 text-center seperator" style="background-color: black;">
+                        <h2>Welcome to ReconnAI</h2>
+                        <p>Use Penetration Testing tools, with AI on your shoulder! Comes out the box with a selection of poplular and useful tools ready to be spun up. NMAP, Masscan, SQLMap, Recon-NG, Nikto - All in the CLI! Flexible enough to reliably run ANY binary from CLI, integration with user supplied binaries</p>
+                    </div>
+                </div>
+                <div class="images col-12 md-6 justify-content-center" style="display: flex">
+                    <img src="img/reconai_splash.png" style="min-height: min-content; max-height: 50rem;">
+                </div>
+            </section>
+            <section id="section2" style="margin-bottom: 2rem;">
+                <div class="row">
+                    <div class="col-12 text-center seperator" style="background-color: black;">
+                        <h2>AI Integration</h2>
+                        <p>ReconnAI utilises the OpenAI GPT API. Takes a modular approach to allowing the user to run their scans without interruption, until the scan comes to a close, then the results are piped in to be analysed by GPT, in the aim to present any findings and give relevant details to how to approach an attack. <br><br> The AI generation is obliged to assess: <br> - Host Info <br> - Services <br> - Vulnerabilities <br> - Public exploits / PoC's available <br> - Mitigations of risk</p>
+                    </div>
+                </div>
+                <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                    <img src="img/reconnai.png" style="min-height: min-content; max-height: 50rem;">
+                </div>
+            </section>
+            <section id="section3" style="margin-bottom: 2rem;">
+                <div class="row">
+                    <div class="col-12 text-center seperator" style="background-color: black;">
+                        <h2>Development</h2>
+                        <p>Development of ReconnAI has primarily been Python3 focussed. During development, i realised there were a number of external dependencies that would be required. As a method to automating this for the user, i developed a bash script that will be prompted to run on launch of tool to check existence of dependencies, and install those that aren't met. </p>
+                    </div>
+                </div>
+                    <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                        <img src="img/install.png" style="min-height: min-content; max-height: 50rem;">
+                    </div>
+            </section>
+
+
+  
+
+            
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="scripts/js/main.js" async defer></script>
+        <script src="scripts/js/reconnai.js" async defer></script>
+    </body>
+</html>
