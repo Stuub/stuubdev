@@ -89,7 +89,7 @@ h2, p {
     color: #fff; /* keep the text color white on hover */
 }
 .dark-mode {
-    background-color: #343a40;
+    background-color: hsl(240, 18%, 12%);
     color: #fff;
 }
 
