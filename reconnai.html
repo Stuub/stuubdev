@@ -18,14 +18,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
-                        <div class="dropdown-menu" aria-labelledby="projectsDropdown" style="background-color: #949ea8;">
-                            <a class="dropdown-item" href="#">ReconnAI</a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle active" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown" style="background-color: #191924;">
+                            <a class="dropdown-item active" href="#">ReconnAI</a>
                             <a class="dropdown-item" href="#">Northumbria Certificate Helper</a>
                             <a class="dropdown-item" href="#">Project 3</a>
                         </div>
@@ -61,6 +61,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#section3">Development</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section4">Interesting Features</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -69,7 +72,7 @@
                 <div class="row">
                     <div class="col-12 text-center seperator" style="background-color: black;">
                         <h2>Welcome to ReconnAI</h2>
-                        <p>Use Penetration Testing tools, with AI on your shoulder! Comes out the box with a selection of poplular and useful tools ready to be spun up. NMAP, Masscan, SQLMap, Recon-NG, Nikto - All in the CLI! Flexible enough to reliably run ANY binary from CLI, integration with user supplied binaries</p>
+                        <p1>Use Penetration Testing tools, with AI on your shoulder! Comes out the box with a selection of poplular and useful tools ready to be spun up. NMAP, Masscan, SQLMap, Recon-NG, Nikto - All in the CLI! Flexible enough to reliably run ANY binary from CLI, integration with user supplied binaries</p1>
                     </div>
                 </div>
                 <div class="images col-12 md-6 justify-content-center" style="display: flex">
@@ -80,7 +83,7 @@
                 <div class="row">
                     <div class="col-12 text-center seperator" style="background-color: black;">
                         <h2>AI Integration</h2>
-                        <p>ReconnAI utilises the OpenAI GPT API. Takes a modular approach to allowing the user to run their scans without interruption, until the scan comes to a close, then the results are piped in to be analysed by GPT, in the aim to present any findings and give relevant details to how to approach an attack. <br><br> The AI generation is obliged to assess: <br> - Host Info <br> - Services <br> - Vulnerabilities <br> - Public exploits / PoC's available <br> - Mitigations of risk</p>
+                        <p1>ReconnAI utilises the OpenAI GPT API. Takes a modular approach to allowing the user to run their scans without interruption, until the scan comes to a close, then the results are piped in to be analysed by GPT, in the aim to present any findings and give relevant details to how to approach an attack. <br><br> The AI generation is obliged to assess: <br> - Host Info <br> - Services <br> - Vulnerabilities <br> - Public exploits / PoC's available <br> - Mitigations of risk</p1>
                     </div>
                 </div>
                 <div class="images col-12 md-6 justify-content-center" style="display: flex;">
@@ -91,13 +94,72 @@
                 <div class="row">
                     <div class="col-12 text-center seperator" style="background-color: black;">
                         <h2>Development</h2>
-                        <p>Development of ReconnAI has primarily been Python3 focussed. During development, i realised there were a number of external dependencies that would be required. As a method to automating this for the user, i developed a bash script that will be prompted to run on launch of tool to check existence of dependencies, and install those that aren't met. </p>
+                        <p1>Development of ReconnAI has primarily been Python3 focussed. During development, i realised there were a number of external dependencies that would be required. As a method to automating this for the user, i developed a bash script that will be prompted to run on launch of tool to check existence of dependencies, and install those that aren't met. </p1>
                     </div>
                 </div>
                     <div class="images col-12 md-6 justify-content-center" style="display: flex;">
                         <img src="img/install.png" style="min-height: min-content; max-height: 50rem;">
                     </div>
             </section>
+            <section id="section4" style="margin-bottom: 2rem;">
+                <div class="row">
+                    <div class="col-12 text-center seperator" style="background-color: black;">
+                        <h2>Interesting Features</h2>
+                        <p1>As this has been a huge passion project for me, there are some features i decided to add for my own educational benefit, improving user experience, or just for fun.</p1>
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 1%;">
+                    <div class="col-12 text-center seperator">
+                        <h3> - Output results to styled HTML page: </h3>
+                            <p> I was getting tired of wasting the beautiful styling in the terminal from the rich python library, so decided to add a condition to add some simple styling to any .html exports created. Always keeping the user experience in mind ;) </p>
+                    </div>
+                </div>
+                    <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                        <img src="img/html.gif" style="min-height: min-content; max-height: 50rem;">
+                    </div>
+                
+                <div class="row" style="margin-top:1%">
+                    <div class="col-12 text-center seperator">
+                        <h3> - Q&A Tool: </h3>
+                            <p> I'm a big fan of learning, and learning is a big part of Cyber Security. I thought it would be a well taken addition if i could add some oppurtunity to expand your knowledge in the tool. </p>
+                            <p> The Q&A tool can be found in the main menu, named AI Assistant. Will have a context driven conversation with you for as long as you'd like.</p>
+                            <p> Context parameters are set to Cyber Security focussed Q&A, but can also take questions and give answers to anything you'd like. Have fun :)</p>
+                    </div>
+                </div>
+                <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                    <img src="img/qna.png" style="min-height: min-content; max-height: 50rem;">
+                </div>
+                <div class="row" style="margin-top: 1%;">
+                    <div class="col-12 text-center seperator">
+                        <h3> - Bring your own binary: </h3>
+                            <p> This idea was a very late stage implementation, mainly a lightbulb idea for quick testing of the ai responses when doing some prompt engineering. Which turned to me realising how flexible it makes the tool</p>
+                            <p> With the use of this feature, you can run any binary as if it were a new shell. From 'ip a' to spinning up a docker. The potential of this i haven't been able to comprehensively test, however it seems faultless in my small testing so far </p>
+                            <p> May be useful for more experienced Pen Testers, i certaintly found it nice to be able to just punch in my CLA's as if it were a regular shell. But now with AI!</p>
+                    </div>
+                </div>
+                <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                    <img src="img/byob.png" style="min-height: min-content; max-height: 50rem;">
+                </div>
+                <div class="row" style="margin-top: 1%;">
+                    <div class="col-12 text-center seperator">
+                        <h3> - Cleanup: </h3>
+                        <p> Digital garbage remover.</p>
+                        <p> With enough use, you'll find that the tool can produce quite a few log files of each scan saved. This feature is here to give the user an intuitive way to get rid of what they don't want</p>
+                        <p> Specifically searches for log-style files, will ommit anything that shouldn't be deleted.</p>
+                        <p> Exclusion method - The user chooses the file they DON'T want deleted, rather than vice versa.</p>
+                    </div>
+                </div>
+                <div class="images col-12 md-6 justify-content-center" style="display: flex;">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls>
+                            <source src="img/cleanup.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </section>
+
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

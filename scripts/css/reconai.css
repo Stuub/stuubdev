@@ -73,6 +73,22 @@ h2, p {
     color: #fff !important;
 }
 
+.embed-responsive-16by9::before {
+    padding-top: 46.3% !important;
+  }
+
+.seperator p {
+    color: black;
+}
+
+.dark-mode .seperator p {
+    color: #fff;
+}
+
+p1 {
+    color: #fff;
+}
+
 /*  */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
@@ -80,7 +96,7 @@ h2, p {
 .dropdown-item {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: #fff !important; /* make the text color white */
-    background-color: #343a40 !important; /* make the background color dark */
+    background-color: #191924 !important; /* make the background color dark */
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
