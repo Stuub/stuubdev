@@ -15,7 +15,7 @@ html {
     color: #fff; /* keep the text color white on hover */
 }
 .dark-mode {
-    background-color: #343a40;
+    background-color: #191924;
     color: #fff;
 }
 /* }    box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.1) !important; */
@@ -225,9 +225,10 @@ h1.display-3 {
 }
 
 main {
-    min-width: -moz-available;
+    min-width: 100%;
     /* background-color: hsl(240, 18%, 12%); */
     background-blend-mode: overlay;
+
 }
 
 .dark-mode main {
