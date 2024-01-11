@@ -6,12 +6,12 @@ html {
 .dropdown-item {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: #fff !important; /* make the text color white */
-    background-color: #343a40 !important; /* make the background color dark */
+    background-color: #191924 !important; /* make the background color dark */
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .dropdown-item:hover {
-    background-color: #6c757d; /* make the background color lighter on hover */
+    background-color: #191924 !important; /* make the background color dark */
     color: #fff; /* keep the text color white on hover */
 }
 .dark-mode {
@@ -95,11 +95,6 @@ html {
     font-family: Arial, Helvetica, sans-serif !important;
     background-color: #313242 !important;
     border-color: #343a40 !important;
-}
-
-.dark-mode .btn-secondary {
-    /* background-color: #313242 !important;
-    border-color: #343a40 !important; */
 }
 
 .jumbotron {

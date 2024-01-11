@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="scripts/css/contact.css">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body class="">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html">stuub.dev</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Projects </a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown" style="background-color: #191924;">
+                            <a class="dropdown-item active" href="reconnai.html">ReconnAI</a>
+                            <a class="dropdown-item" href="cert.html">Northumbria Certificate Helper</a>
+                            <a class="dropdown-item" href="#">Project 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="ml-auto">
+                    <button class="btn btn-secondary my-2 my-sm-0 mt-auto" id="darkModeToggle">Dark Mode</button>
+                </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="display-4">Contact Me</div>
+
+            </div>
+        </div>
+
+        <div class="container" style="--gap: 32; --blur: 20; --spread: 80; --direction: row;">
+            <div class="row">
+                <div class="col-md-12" style="--active: 1; --start: 0;">
+                    <h2>Follow Me</h2>
+                    <div class="card mx-auto">
+                        <div class="plswork"></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="glows"></div>
+                                <div class="col">
+                                    <img src="img/linkedin.svg" alt="LinkedIn" class="social-icon" style="height: 2rem; width: 2rem;">
+                                    <a href="https://uk.linkedin.com/in/stuart-beck-4a69051a4" class="card-link d-block">LinkedIn</a>
+                                </div>
+                                <div class="col">
+                                    <img src="img/github-mark.svg" alt="GitHub" class="social-icon" style="height: 2rem; width: 2rem;">
+                                    <a href="https://github.com/stuub" class="card-link d-block">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Contact form -->
+                <div class="col-md-12" style="margin-top: 15%; --active: 1; --start: 0;">
+                    <h2>Contact Me</h2>
+                    <form action="mailto:stuub-real@proton.me" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <!-- Social links -->
+
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <script>
+            AOS.init();
+        </script>
+        <script src="scripts/js/main.js" defer></script>
+    </body>
+</html>

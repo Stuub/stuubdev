@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 // Pointer colour shift
 const CONTAINER = document.querySelector('.container')
-const CARDS = document.querySelectorAll('.col-sm-4, .ml-auto')
+const CARDS = document.querySelectorAll('.col-sm-4, .col-md-12')
 
 const CONFIG = {
 	proximity: 40,
@@ -63,13 +63,16 @@ const UPDATE = (event) => {
 	}
 }
 
-document.body.addEventListener('pointermove', UPDATE)
-
+if (document.body) {
+    document.body.addEventListener('pointermove', UPDATE);
+}
 const RESTYLE = () => {
-	CONTAINER.style.setProperty('--gap', CONFIG.gap)
-	CONTAINER.style.setProperty('--blur', CONFIG.blur)
-	CONTAINER.style.setProperty('--spread', CONFIG.spread)
-	CONTAINER.style.setProperty('--direction', CONFIG.vertical ? 'column' : 'row')
+    if (CONTAINER) {
+        CONTAINER.style.setProperty('--gap', CONFIG.gap)
+        CONTAINER.style.setProperty('--blur', CONFIG.blur)
+        CONTAINER.style.setProperty('--spread', CONFIG.spread)
+        CONTAINER.style.setProperty('--direction', CONFIG.vertical ? 'column' : 'row')
+    }
 }
 
 RESTYLE()
