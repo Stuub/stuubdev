@@ -6,6 +6,41 @@ html {
     text-align: center;
 }
 
+/* code {
+    color: #000000 !important;
+}
+
+.dark-mode code {
+    color: #e83e8c !important;
+} */
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background: #f2f2f2 !important;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+    font-size: small !important;
+    color: #000 !important;
+    text-shadow: none !important;
+}
+
+.dark-mode .card-body :not(pre) > code[class*="language-"],
+.dark-mode pre[class*="language-"] {
+    background: #161620 !important;
+}
+
+.dark-mode .card-body [class*="language-"], 
+.dark-mode pre[class*="language-"] {
+    font-size: small !important;
+    color: #fff !important;
+    text-shadow: 0 1px #000 !important;
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #e49300 !important;
+    background: none !important;
+  }
+
 /* */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
