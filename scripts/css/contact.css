@@ -389,6 +389,22 @@ main {
     background-color: hsl(240, 18%, 12%);
 }
 
+@media (max-width: 576px) {
+    .col-md-12 {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+@media (max-width: 576px) {
+.card form {
+    flex-direction: column;
+}
+.card form .form-group {
+    width: 100%;
+}
+}
+
 .card {
     transition: transform 0.3s ease-in-out, min-height 0.3s ease-in-out,
         padding 0.3s ease-in-out, height 0.3s ease-in-out;

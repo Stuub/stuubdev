@@ -225,7 +225,7 @@ h1.display-3 {
 }
 
 main {
-    min-width: 100%;
+    min-width: -webkit-fill-available;
     /* background-color: hsl(240, 18%, 12%); */
     background-blend-mode: overlay;
 
@@ -234,6 +234,35 @@ main {
 .dark-mode main {
     background-color: hsl(240, 18%, 12%);
 }
+
+
+@media (max-width: 576px) {
+    main {
+      width: min-content;
+      box-sizing: border-box;
+    }
+  }
+
+@media (max-width: 576px) {
+    .card {
+      flex-direction: column;
+    }
+    .card .lead {
+      overflow: auto;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card, .card-section {
+      flex-direction: column;
+    }
+    .card img {
+      max-width: 100%;
+    }
+    .card-section .card {
+      margin-bottom: 20px;
+    }
+  }
 
 .card {
     transition: transform 0.3s ease-in-out, min-height 0.3s ease-in-out,

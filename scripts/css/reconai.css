@@ -94,6 +94,16 @@ p1 {
     color: #ca2121 !important;
 }
 
+@media (max-width: 768px) {
+    .d-flex.flex-row {
+      flex-direction: column;
+    }
+    .scrolling.scroll-nav {
+      position: static;
+      margin-bottom: 1rem;
+    }
+  }
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .nav-link {
@@ -128,6 +138,22 @@ p1 {
         font-size: 1.0rem;
     }
 }
+
+@media (max-width: 768px) {
+    #myScrollspy .row {
+      flex-direction: column;
+    }
+    #myScrollspy .seperator {
+      text-align: left;
+    }
+    #myScrollspy .images {
+      justify-content: center;
+      max-width: 100%;
+    }
+    #myScrollspy img {
+      max-width: 100%;
+    }
+  }
 
 /*  */
 
