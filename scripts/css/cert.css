@@ -12,15 +12,35 @@ html {
 
 .display-4 {
     text-align: center;
+    font-size: 2.5rem !important;
 }
 
-/* code {
-    color: #000000 !important;
+@media (max-width: 768px) {
+    .container {
+      font-size: 1.5em !important;
+      overflow-x: auto !important;
+      height: max-content !important;
+    }
+    .card-body {
+      padding: 15px !important;
+    }
+    .card:hover {
+      transform: none !important;
+    }
+    .card-body {
+      width: auto !important;
+    }
+    pre[class*=language-] {
+        text-align: center !important;
+    }
 }
 
-.dark-mode code {
-    color: #e83e8c !important;
-} */
+@media (max-width: 768px) {
+    .lead + .container {
+      clear: both;
+      margin-top: 20px;
+    }
+  }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background: #f2f2f2 !important;
@@ -105,7 +125,6 @@ code[class*="language-"], pre[class*="language-"] {
     background: #191924 !important;
     box-shadow:  0 0.1rem 0 rgba(255, 255, 255, 0.18) !important;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    /* font-family: Arial, Helvetica, sans-serif !important; */
 }
 
 .btn-secondary {
@@ -342,7 +361,7 @@ body {
     place-items: center;
     position: relative;
     padding: 2rem;
-    touch-action: none;
+    touch-action: auto;
 }
 
 .dark-mode .col-sm-4 {
