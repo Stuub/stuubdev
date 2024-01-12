@@ -58,14 +58,6 @@ html {
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-@media (max-width: 576px) {
-    .navbar {
-        padding: 0.1rem 16rem !important;
-        display: grid !important;
-    }
-    
-}
-
 .btn-primary {
     background-color: #b93743 !important;
     border-color: #b93743 !important;

@@ -155,12 +155,6 @@ p1 {
     }
   }
 
-@media (max-width: 576px) {
-    .navbar {
-        padding: 0.1rem 8rem !important;
-    }
-}
-
 /*  */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
