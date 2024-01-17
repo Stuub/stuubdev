@@ -17,6 +17,9 @@
         <meta name="description" content="Looking to get in touch with me? Come have a look at where to find me and my socials! Or feel free to send me a personal email!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+        <link rel="stylesheet" href="scripts/css/minimal.css">
     </head>
     <body class="">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -76,18 +79,21 @@
                 <!-- Contact form -->
                 <div class="col-md-12" style="margin-top: 15%; --active: 1; --start: 0;">
                     <h2>Contact Me</h2>
-                    <form action="mailto:stuub-real@proton.me" method="post" enctype="text/plain">
+                    <form 
+                    action="https://formspree.io/f/mayrnajb" 
+                    method="post"
+                    >
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <input type="text" class="form-control" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email">
+                            <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
