@@ -40,7 +40,16 @@ html {
       clear: both;
       margin-top: 20px;
     }
-  }
+}
+
+@media (max-width: 420px) {
+    body {
+        display: block !important;
+    }
+    .dark-mode .card-body [class*="language-"], .dark-mode pre[class*="language-"] {
+        font-size: x-small !important;
+    }
+}
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background: #f2f2f2 !important;

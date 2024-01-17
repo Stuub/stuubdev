@@ -351,6 +351,28 @@ body {
     color: var(--color);
 }
 
+@media (max-width: 420px) {
+    body {
+        font-size: 0.8rem;
+        width:70%;
+    }
+    img#splash {
+        max-width: 100%;
+        display: flex;
+        position: inherit;
+        padding-right: inherit;
+    }
+    .jumbotron-fluid {
+        padding-right: 12% !important;
+    }
+    .scrolling.scroll-nav {
+        position: static;
+        margin-bottom: 1rem;
+        display: flex;
+        height: revert;
+    }
+}
+
 .container {
     --spread: 60;
     display: flex;

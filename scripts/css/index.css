@@ -233,7 +233,7 @@ main {
     background-color: hsl(240, 18%, 12%);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     main {
       width: min-content;
       box-sizing: border-box;
@@ -244,10 +244,78 @@ main {
     .lead {
         font-size: 0.9rem !important;
         font-weight: 135 !important;
+        margin: 10% !important;
+    }
+    .container {
+        width: 94%;
+        padding-right: 22px !important;
+        padding-left: 10px !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+    .timeline {
+        max-width: 350px !important;
+    }
+    .timeline .container::before {
+        right: -29px !important;
+    }
+
+    div.right:nth-child(2) > div:nth-child(1), div.container:nth-child(4) > div:nth-child(1){
+        position: inherit;
+        left: 20% !important;
+        margin: left 22% !important;
+    }
+    body {
+        display: grid !important;
+    }
+    .footer{
+        /* width: 85% !important; */
+        width: 100% !important;
+        text-align: center !important;
+    }    
+  }
+
+  @media (max-width: 389px) {
+    .card-section, .experience-section {
+        height: inherit;
+        /* width: 130% !important; */
+    }
+    body {
+        right: 10% !important;
+    }
+    .lead {
+        font-size: 0.9rem !important;
+        font-weight: 135 !important;
+        margin: 10% !important;
+    }
+    .text-muted {
+        width: 80%;
+    }
+    .timeline {
+        max-width: 350px !important;
+        left: 40%;
+        margin-left: none !important;
+    }
+    .timeline .left {
+        right: 40% !important;
+    }
+    .timeline .container::before {
+        right: -22px !important;
+    }
+    .timeline .container .content p {
+        margin-bottom: 2rem !important;
     }
   }
 
-@media (max-width: 576px) {
+  /* html body.dark-mode main div.container.mt-5.aos-init.aos-animate div.timeline div.container.right.aos-init.aos-animate div.content {
+    position: inherit;
+    left: 0 !important;
+  } */
+
+  /* div.right:nth-child(2) > div:nth-child(1) */
+
+@media (max-width: 480px) {
     .card {
       flex-direction: column;
     }
@@ -256,7 +324,7 @@ main {
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 480px) {
     .card, .card-section {
       flex-direction: column;
     }
@@ -338,7 +406,8 @@ main {
 
 body {
     background: var(--bg);
-    display: grid;
+    /* display: grid; */
+    display: inherit;
     place-items: center;
     min-height: 100vh;
     font-family: "Geist Sans", "SF Pro Text", "SF Pro Icons", "AOS Icons",
@@ -488,7 +557,7 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .row {
         display: grid !important;
     }
