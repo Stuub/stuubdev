@@ -75,7 +75,7 @@ html {
     padding: 1.4rem;
     border-radius: var(--border-radius);
     min-width: 280px;
-    max-width: 280px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;

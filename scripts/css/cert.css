@@ -15,6 +15,15 @@ html {
     font-size: 2.5rem !important;
 }
 
+@media (max-width: 900px) {
+    body {
+        display: block !important;
+    }
+    .dark-mode .card-body [class*="language-"], .dark-mode pre[class*="language-"] {
+        font-size: x-small !important;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
       font-size: 1.5em !important;

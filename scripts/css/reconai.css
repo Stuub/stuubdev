@@ -351,6 +351,27 @@ body {
     color: var(--color);
 }
 
+@media (max-width: 970px) {
+    body {
+        width:100%;
+        font-size: 0.8rem;
+        display:block;
+    }
+    #myScrollspy .row {
+        flex-direction: column;
+      }
+      #myScrollspy .seperator {
+        text-align: left;
+      }
+      #myScrollspy .images {
+        justify-content: center;
+        max-width: 100%;
+      }
+      #myScrollspy img {
+        max-width: 100%;
+      }
+}
+
 @media (max-width: 420px) {
     body {
         font-size: 0.8rem;
@@ -385,6 +406,7 @@ body {
     position: relative;
     padding: 2rem;
     touch-action: auto;
+    left: 4%;
 }
 
 .dark-mode .col-sm-4 {
