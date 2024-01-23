@@ -285,7 +285,7 @@ main {
         right: 10% !important;
     }
     .lead {
-        font-size: 0.9rem !important;
+        font-size: 0.9rem !important; 
         font-weight: 135 !important;
         margin: 10% !important;
     }
@@ -318,9 +318,13 @@ main {
 @media (max-width: 480px) {
     .card {
       flex-direction: column;
+      overflow: auto;
     }
     .card .lead {
       overflow: auto;
+    }
+    card aos-init aos-animate {
+        overflow: auto;
     }
   }
 
