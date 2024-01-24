@@ -323,8 +323,14 @@ main {
     .card .lead {
       overflow: auto;
     }
-    card aos-init aos-animate {
+    .card aos-init aos-animate {
         overflow: auto;
+    }
+    body {
+        right: 10%;
+    }
+    .footer {
+        width: 90% !important;
     }
   }
 
