@@ -268,6 +268,7 @@ main {
     }
     body {
         display: grid !important;
+        right: 10%;
     }
     .footer{
         /* width: 85% !important; */
@@ -326,12 +327,11 @@ main {
     .card aos-init aos-animate {
         overflow: auto;
     }
-    body {
-        right: 10%;
-    }
+
     .footer {
         width: 90% !important;
     }
+    
   }
 
   @media (max-width: 480px) {
