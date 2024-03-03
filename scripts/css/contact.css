@@ -1,6 +1,9 @@
 .dark-mode .social-icon {
     filter: invert(1);
 }
+.thm_font {
+	height: fit-content !important;
+}
 
 h2 {
     text-align: center;
