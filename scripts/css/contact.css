@@ -86,7 +86,6 @@ html {
     overflow: hidden;
     transition: transform 0.3s ease-in-out, min-height 0.3s ease-in-out,
     padding 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-shadow: 0 0.5px 0.2px rgb(138, 138, 138);
 }
 
 .dark-mode .col-md-12 {
